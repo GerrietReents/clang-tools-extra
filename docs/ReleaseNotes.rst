@@ -83,6 +83,11 @@ The improvements are...
 Improvements to clang-tidy
 --------------------------
 
+- New :doc:`btc-modernize-use-auto
+  <clang-tidy/checks/btc-modernize-use-auto>` check.
+
+  FIXME: add release notes.
+
 - The checks profiling info can now be stored as JSON files for futher
   post-processing and analysis.
 

@@ -19,14 +19,14 @@ Clang-Tidy Checks
    android-cloexec-socket
    android-comparison-in-temp-failure-retry
    boost-use-to-string
-   btc-unmanaged-derived-from-sharable
-   btc-Singleton
    btc-calling-SFehler-with-stop-on-error
    btc-global-variables
+   btc-modernize-use-auto
    btc-multiple-parameters-of-same-type
    btc-no-assignment-to-reference-parameter
    btc-optional-parameter-in-virtual-method
    btc-singleton
+   btc-unmanaged-derived-from-sharable
    bugprone-argument-comment
    bugprone-assert-side-effect
    bugprone-bool-pointer-implicit-conversion

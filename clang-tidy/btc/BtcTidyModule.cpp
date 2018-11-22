@@ -10,6 +10,7 @@
 #include "../ClangTidy.h"
 #include "../ClangTidyModule.h"
 #include "../ClangTidyModuleRegistry.h"
+#include "ModernizeUseAutoCheck.h"
 #include "UnmanagedDerivedFromSharableCheck.h"
 #include "CallingSfehlerWithStopOnErrorCheck.h"
 #include "GlobalVariablesCheck.h"
@@ -29,6 +30,8 @@ namespace btc {
 class BtcModule : public ClangTidyModule {
 public:
   void addCheckFactories(ClangTidyCheckFactories &CheckFactories) override {
+    CheckFactories.registerCheck<ModernizeUseAutoCheck>(
+        "btc-modernize-use-auto");
     CheckFactories.registerCheck<UnmanagedDerivedFromSharableCheck>(
         "btc-unmanaged-derived-from-sharable");
     CheckFactories.registerCheck<CallingSfehlerWithStopOnErrorCheck>(
