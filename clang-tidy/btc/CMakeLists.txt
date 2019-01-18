@@ -3,6 +3,7 @@ set(LLVM_LINK_COMPONENTS support)
 add_clang_library(clangTidyBtcModule
   BtcTidyModule.cpp
   ModernizeUseAutoCheck.cpp
+  PrinssharedmemoryusageCheck.cpp
   UnmanagedDerivedFromSharableCheck.cpp
   CallingSfehlerWithStopOnErrorCheck.cpp
   GlobalVariablesCheck.cpp

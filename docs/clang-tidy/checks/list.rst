@@ -19,6 +19,7 @@ Clang-Tidy Checks
    android-cloexec-socket
    android-comparison-in-temp-failure-retry
    boost-use-to-string
+   btc-PRINSSharedMemoryUsage
    btc-calling-SFehler-with-stop-on-error
    btc-global-variables
    btc-modernize-use-auto

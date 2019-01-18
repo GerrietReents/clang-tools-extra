@@ -11,6 +11,7 @@
 #include "../ClangTidyModule.h"
 #include "../ClangTidyModuleRegistry.h"
 #include "ModernizeUseAutoCheck.h"
+#include "PrinssharedmemoryusageCheck.h"
 #include "UnmanagedDerivedFromSharableCheck.h"
 #include "CallingSfehlerWithStopOnErrorCheck.h"
 #include "GlobalVariablesCheck.h"
@@ -32,6 +33,8 @@ public:
   void addCheckFactories(ClangTidyCheckFactories &CheckFactories) override {
     CheckFactories.registerCheck<ModernizeUseAutoCheck>(
         "btc-modernize-use-auto");
+    CheckFactories.registerCheck<PrinssharedmemoryusageCheck>(
+        "btc-PRINSSharedMemoryUsage");
     CheckFactories.registerCheck<UnmanagedDerivedFromSharableCheck>(
         "btc-unmanaged-derived-from-sharable");
     CheckFactories.registerCheck<CallingSfehlerWithStopOnErrorCheck>(

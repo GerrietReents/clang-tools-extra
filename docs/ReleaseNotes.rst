@@ -83,6 +83,11 @@ The improvements are...
 Improvements to clang-tidy
 --------------------------
 
+- New :doc:`btc-PRINSSharedMemoryUsage
+  <clang-tidy/checks/btc-PRINSSharedMemoryUsage>` check.
+
+  FIXME: add release notes.
+
 - New :doc:`btc-modernize-use-auto
   <clang-tidy/checks/btc-modernize-use-auto>` check.
 
